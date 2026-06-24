@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FunbyPlayz | Portfolio</title>
+    <!-- Tailwind CSS for sleek utility styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts for modern typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for high-quality icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #090d10;
+            /* Subtle grid background matching the screenshots */
+            background-image: 
+                linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+            background-size: 28px 28px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .accent-glow {
+            text-shadow: 0 0 20px rgba(0, 235, 212, 0.2);
+        }
+
+        /* The interactive background glow element */
+        #mouse-glow {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            pointer-events: none;
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            background: radial-gradient(600px circle at 50% 50%, rgba(0, 235, 212, 0.08), transparent 40%);
+        }
+    </style>
+</head>
+<body class="text-gray-300 min-h-screen flex flex-col items-center justify-center py-12 px-4 selection:bg-[#00ebd4] selection:text-black">
+
+    <!-- Interactive Background Canvas -->
+    <div id="mouse-glow"></div>
+
+    <main class="w-full max-w-2xl space-y-10 relative z-10">
+
+        <!-- SECTION 2 (Bio) -->
+        <section class="space-y-6">
+            <p class="text-lg md:text-xl leading-relaxed text-gray-400">
+                Hey, I'm <span class="text-[#00ebd4] font-semibold accent-glow">FunbyPlayz</span> — a passionate web developer and gamer. 
+                I build modern, fast, and secure websites for businesses, portfolios, and gaming communities. 
+                I also founded my own Minecraft server <span class="text-[#00ebd4] font-semibold accent-glow">LushMC</span> and hosting community 
+                <span class="text-[#00ebd4] font-semibold accent-glow">CreepHost</span> (which have been closed now), and specialise in creating custom gameplay experiences.
+            </p>
+
+            <!-- Tags -->
+            <div class="flex flex-wrap gap-2.5 pt-2">
+                <span class="bg-[#111720] text-gray-400 border border-gray-800/60 px-4 py-2 rounded-xl text-sm font-medium tracking-wide hover:border-[#00ebd4]/30 hover:text-white transition-colors cursor-default">Web Developer</span>
+                <span class="bg-[#111720] text-gray-400 border border-gray-800/60 px-4 py-2 rounded-xl text-sm font-medium tracking-wide hover:border-[#00ebd4]/30 hover:text-white transition-colors cursor-default">MC Server Founder</span>
+                <span class="bg-[#111720] text-gray-400 border border-gray-800/60 px-4 py-2 rounded-xl text-sm font-medium tracking-wide hover:border-[#00ebd4]/30 hover:text-white transition-colors cursor-default">Discord Dev</span>
+                <span class="bg-[#111720] text-gray-400 border border-gray-800/60 px-4 py-2 rounded-xl text-sm font-medium tracking-wide hover:border-[#00ebd4]/30 hover:text-white transition-colors cursor-default">Community Builder</span>
+                <span class="bg-[#111720] text-gray-400 border border-gray-800/60 px-4 py-2 rounded-xl text-sm font-medium tracking-wide hover:border-[#00ebd4]/30 hover:text-white transition-colors cursor-default">Gamer</span>
+            </div>
+        </section>
+
+
+        <!-- SECTION 1 (CTA & Stats) -->
+        <section class="bg-[#0f141c]/80 backdrop-blur-sm border border-gray-800/60 rounded-2xl p-6 md:p-8 space-y-6 shadow-xl">
+            <div class="space-y-2">
+                <h2 class="text-xl md:text-2xl font-bold text-white tracking-tight">Need a Custom Website or Domain?</h2>
+                <p class="text-sm md:text-base text-gray-400 leading-relaxed">
+                    Apne business, portfolio, ya Minecraft server ke liye professional website banwani ho ya domain chahiye ho? Abhi mujhe contact karein!
+                </p>
+            </div>
+
+            <!-- Discord Button -->
+            <div>
+                <a href="https://discord.gg/wnfEa9NVsK" target="_blank" rel="noopener noreferrer" 
+                   class="w-full bg-[#5865F2] hover:bg-[#4752C4] text-white font-semibold py-3.5 px-6 rounded-xl flex items-center justify-center gap-3 transition-all duration-200 shadow-[0_0_15px_rgba(88,101,242,0.3)] hover:shadow-[0_0_25px_rgba(88,101,242,0.5)] border border-[#5865F2] hover:scale-[1.01]">
+                    <i class="fa-brands fa-discord text-xl"></i>
+                    <span>Message on Discord</span>
+                </a>
+            </div>
+
+            <!-- Stats Grid -->
+            <div class="grid grid-cols-3 gap-3 pt-2">
+                <div class="bg-[#0b0f14] border border-gray-800/40 hover:border-gray-700/60 transition-colors rounded-xl p-4 text-center flex flex-col justify-center">
+                    <span class="text-[#00ebd4] font-bold text-xl md:text-2xl tracking-tight accent-glow">25 - 30</span>
+                    <span class="text-[10px] md:text-xs font-bold text-gray-500 uppercase tracking-widest mt-1">Projects Built</span>
+                </div>
+                <div class="bg-[#0b0f14] border border-gray-800/40 hover:border-gray-700/60 transition-colors rounded-xl p-4 text-center flex flex-col justify-center">
+                    <span class="text-[#00ebd4] font-bold text-xl md:text-2xl tracking-tight accent-glow">8+</span>
+                    <span class="text-[10px] md:text-xs font-bold text-gray-500 uppercase tracking-widest mt-1">MC Servers</span>
+                </div>
+                <div class="bg-[#0b0f14] border border-gray-800/40 hover:border-gray-700/60 transition-colors rounded-xl p-4 text-center flex flex-col justify-center">
+                    <span class="text-[#00ebd4] font-bold text-xl md:text-2xl tracking-tight accent-glow">100%</span>
+                    <span class="text-[10px] md:text-xs font-bold text-gray-500 uppercase tracking-widest mt-1">Dedication</span>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- SECTION 3 (Links) -->
+        <section class="space-y-4">
+            <!-- Section Separator Line -->
+            <div class="flex items-center justify-center my-6">
+                <div class="h-[1px] bg-gray-800/80 w-full"></div>
+                <span class="px-4 text-[11px] font-bold text-gray-500 uppercase tracking-[0.2em] whitespace-nowrap">Links</span>
+                <div class="h-[1px] bg-gray-800/80 w-full"></div>
+            </div>
+
+            <!-- guns.lol/funbyplayz Replacement Card -->
+            <a href="https://guns.lol/funbyplayz" target="_blank" rel="noopener noreferrer" 
+               class="flex items-center justify-between bg-[#0f141c]/80 backdrop-blur-sm border border-gray-800/50 hover:border-[#00ebd4]/40 hover:shadow-[0_0_20px_rgba(0,235,212,0.1)] rounded-xl p-5 group transition-all duration-300 hover:scale-[1.005]">
+                <div class="flex items-center gap-4">
+                    <div class="bg-[#161f2b] p-3 rounded-xl border border-gray-800 group-hover:border-[#00ebd4]/50 transition-colors">
+                        <i class="fa-solid fa-crosshairs text-[#00ebd4] text-lg"></i>
+                    </div>
+                    <div class="text-left">
+                        <h3 class="text-white font-semibold tracking-wide group-hover:text-[#00ebd4] transition-colors">guns.lol/funbyplayz</h3>
+                        <p class="text-xs text-gray-500 font-medium mt-0.5">View all my social links and connections</p>
+                    </div>
+                </div>
+                <div class="text-gray-500 group-hover:text-white transition-all transform group-hover:translate-x-1 duration-200 mr-1">
+                    <i class="fa-solid fa-arrow-right text-lg"></i>
+                </div>
+            </a>
+        </section>
+
+    </main>
+
+    <!-- Interactivity Script -->
+    <script>
+        const glow = document.getElementById('mouse-glow');
+
+        // Track mouse movement to move the glow
+        window.addEventListener('mousemove', (e) => {
+            const x = e.clientX;
+            const y = e.clientY;
+            
+            // Update the radial gradient position
+            glow.style.background = `radial-gradient(600px circle at ${x}px ${y}px, rgba(0, 235, 212, 0.06), transparent 40%)`;
+            glow.style.opacity = '1';
+        });
+
+        // Fade out glow when mouse leaves the window
+        document.addEventListener('mouseleave', () => {
+            glow.style.opacity = '0';
+        });
+    </script>
+</body>
+</html>
