@@ -91,12 +91,12 @@
                 <span class="text-[#00ebd4] font-semibold accent-glow">CreepHost</span> (which have been closed now), and specialise in creating custom gameplay experiences.
             </p>
 
-            <!-- Skill Tags Grid (Updated based on image_888d2d.png) -->
-            <div class="flex flex-wrap gap-2.5 pt-1">
-                <span class="bg-[#0c1015]/90 text-gray-300 border border-gray-800/60 px-4 py-2 rounded-xl text-sm font-medium tracking-wide hover:border-[#00ebd4]/30 hover:text-white transition-all cursor-default">Web Developer</span>
-                <span class="bg-[#0c1015]/90 text-gray-300 border border-gray-800/60 px-4 py-2 rounded-xl text-sm font-medium tracking-wide hover:border-[#00ebd4]/30 hover:text-white transition-all cursor-default">MC Server Founder</span>
-                <span class="bg-[#0c1015]/90 text-gray-300 border border-gray-800/60 px-4 py-2 rounded-xl text-sm font-medium tracking-wide hover:border-[#00ebd4]/30 hover:text-white transition-all cursor-default">Gamer</span>
-                <span class="bg-[#0c1015]/90 text-gray-300 border border-gray-800/60 px-4 py-2 rounded-xl text-sm font-medium tracking-wide hover:border-[#00ebd4]/30 hover:text-white transition-all cursor-default">Discord Dev</span>
+            <!-- Skill Tags Grid (Stretched to perfectly fill layout width based on image_888dcf.png) -->
+            <div class="flex flex-row flex-wrap md:flex-nowrap gap-3 pt-1 w-full">
+                <span class="flex-1 text-center bg-[#0c1015]/90 text-gray-300 border border-gray-800/60 px-4 py-2.5 rounded-xl text-sm font-medium tracking-wide hover:border-[#00ebd4]/30 hover:text-white transition-all cursor-default whitespace-nowrap">Web Developer</span>
+                <span class="flex-1 text-center bg-[#0c1015]/90 text-gray-300 border border-gray-800/60 px-4 py-2.5 rounded-xl text-sm font-medium tracking-wide hover:border-[#00ebd4]/30 hover:text-white transition-all cursor-default whitespace-nowrap">MC Server Founder</span>
+                <span class="flex-1 text-center bg-[#0c1015]/90 text-gray-300 border border-gray-800/60 px-4 py-2.5 rounded-xl text-sm font-medium tracking-wide hover:border-[#00ebd4]/30 hover:text-white transition-all cursor-default whitespace-nowrap">Gamer</span>
+                <span class="flex-1 text-center bg-[#0c1015]/90 text-gray-300 border border-gray-800/60 px-4 py-2.5 rounded-xl text-sm font-medium tracking-wide hover:border-[#00ebd4]/30 hover:text-white transition-all cursor-default whitespace-nowrap">Discord Dev</span>
             </div>
         </section>
 
@@ -174,7 +174,6 @@
         let currentX = 0;
         let currentY = 0;
         
-        // Linear Interpolation friction factor
         const ease = 0.06; 
 
         window.addEventListener('mousemove', (e) => {
